@@ -1107,3 +1107,68 @@ section,
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
+
+
+/* **************************************
+   My styles
+*****************************************/
+.skills {
+  /* gap: 15px; */
+  flex-direction:column;
+}
+
+.icons {
+  width: 75px;
+  height: auto;
+  transition: 0s;
+  text-align: center;
+  filter: grayscale(100%);
+}
+.icons:hover {
+  filter: grayscale(0%);
+}
+
+.button {
+border: none;
+border-radius: 25px;
+color: white;
+background-color: #149ddd;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 25px;
+cursor: pointer;
+}
+
+button:hover {
+box-shadow: 0 0 5px rgba(0, 162, 255, 0.71);
+/* 0 0 10px rgba(0, 162, 255, 0.71); */
+background-color: rgba(0, 162, 255, 0.71);
+}
+
+.portfolio-item {
+  position: relative;
+  display: inline-block;
+}
+
+.skill-text {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  font-size: 13px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 1px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 15px;
+}
+
+.portfolio-item:hover .skill-text {
+  opacity: 1;
+}
+
+/* End my styles */
